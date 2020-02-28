@@ -1,0 +1,24 @@
+version: "3"
+networks:
+  web:
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: hotel
+    volumes:
+      - C:/data/mysql:/var/lib/mysql
+    networks:
+      - web
+
+  hotel-app:
+    image: hotel
+    expose:
+      - 8080
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
+    networks:
+      - web
