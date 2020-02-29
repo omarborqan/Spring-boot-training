@@ -11,6 +11,7 @@ public class Attendance {
     private Integer id;
 
     @ManyToOne
+    @JoinColumn(name = "employee_id")
     private Employee employee;
 
     private String checkInHour;

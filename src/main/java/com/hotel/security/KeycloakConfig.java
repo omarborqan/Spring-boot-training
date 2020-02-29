@@ -1,7 +1,6 @@
-package com.hotel;
+package com.hotel.security;
 
 // https://medium.com/keycloak/secure-spring-boot-2-using-keycloak-f755bc255b68
-// nassar will ask about this class !!
 
 import org.keycloak.adapters.springboot.KeycloakSpringBootConfigResolver;
 import org.springframework.context.annotation.Bean;
@@ -15,3 +14,5 @@ public class KeycloakConfig {
         return new KeycloakSpringBootConfigResolver();
     }
 }
+
+//https://www.thomasvitale.com/spring-security-keycloak/
