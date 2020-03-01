@@ -21,7 +21,7 @@ services:
       KEYCLOAK_PASSWORD: 1234
 
   hotel-app:
-    build: ./g
+    build: ./
     image: hotel
     expose:
       - 8081
