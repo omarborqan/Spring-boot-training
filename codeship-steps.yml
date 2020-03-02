@@ -1,4 +1,2 @@
 - name: ci
   service: hotel
-  command: mvn test -B
-
