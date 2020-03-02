@@ -20,7 +20,7 @@ services:
   hotel:
     build:
       image: omarborqan/Spring-boot-training
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile
     depends_on:
       - mysql
       - keycloak
