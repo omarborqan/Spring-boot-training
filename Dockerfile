@@ -1,4 +1,4 @@
-FROM openjdk:13-jdk-alpine
+FROM maven:3
 RUN mkdir -p /tmp/build
 ADD /src /tmp/build/
 WORKDIR /tmp/build
