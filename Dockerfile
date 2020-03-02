@@ -3,7 +3,7 @@ FROM openjdk:13-jdk-alpine
 RUN mkdir /tmp/build
 
 WORKDIR /tmp/build
-RUN mvn install clean --fail-never -B -DfailIfNoTests=false
+#RUN mvn install clean --fail-never -B -DfailIfNoTests=false
 COPY . ./
 CMD ["printenv"]
 
