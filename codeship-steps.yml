@@ -1,6 +1,6 @@
 - name: ci
-  service: project_name
+  service: hotel
   command: mvn test -B
 - name: ci
-  service: project_name
+  service: hotel
   command: gradle build
