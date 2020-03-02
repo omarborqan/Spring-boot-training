@@ -1,15 +1,12 @@
-hotel:
-  build:
-    image: omarborqan/Spring-boot-training
-    dockerfile: Dockerfile
-  depends_on:
-    - mysql
-    - keycloak
 mysql:
   image: mysql:5.7
 keycloak:
   image: quay.io/keycloak/keycloak
   
-
-
-
+hotel:
+  build: ./
+    image: omarborqan/Spring-boot-training
+#    dockerfile: Dockerfile
+  depends_on:
+    - mysql
+    - keycloak
