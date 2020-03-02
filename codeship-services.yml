@@ -1,4 +1,4 @@
 hotel-app:
   build:
-    image: omarborqan/Spring-boot-training
+    image: Asaltech/Spring-boot-training
     dockerfile: Dockerfile
