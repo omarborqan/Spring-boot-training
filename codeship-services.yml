@@ -1,20 +1,20 @@
 hotel:
-  build:
+  build: ./
     image: omarborqan/Spring-boot-training
-    dockerfile: Dockerfile
+#    dockerfile: Dockerfile
+    
+#   mysql:
+#     image: mysql:5.7
+#     environment:
+#       MYSQL_ROOT_PASSWORD: root
+#       MYSQL_DATABASE: hotel
+#     networks:
+#       - web
 
-  mysql:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: hotel
-    networks:
-      - web
-
-  keycloak:
-    image: quay.io/keycloak/keycloak
-    ports:
-      - 8080:8080
-    environment:
-      KEYCLOAK_USER: oburqan
-      KEYCLOAK_PASSWORD: 1234
+#   keycloak:
+#     image: quay.io/keycloak/keycloak
+#     ports:
+#       - 8080:8080
+#     environment:
+#       KEYCLOAK_USER: oburqan
+#       KEYCLOAK_PASSWORD: 1234
