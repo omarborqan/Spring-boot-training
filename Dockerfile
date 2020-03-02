@@ -4,7 +4,7 @@ RUN mkdir /tmp/build
 
 WORKDIR /tmp/build
 #RUN mvn install clean --fail-never -B -DfailIfNoTests=false
-COPY . ./
+COPY . .
 CMD ["printenv"]
 
 #FROM ubuntu:zesty
