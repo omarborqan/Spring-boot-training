@@ -1,6 +1,6 @@
 FROM maven:3.6.3-jdk-13
 
-WORKDIR /src
+WORKDIR /app
 
 # Copy the pom.xml into the image to install all dependencies
 COPY pom.xml ./
