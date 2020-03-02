@@ -2,3 +2,4 @@ hotel:
   build:
     image: omarborqan/Spring-boot-training
     dockerfile: Dockerfile
+  cached: true
