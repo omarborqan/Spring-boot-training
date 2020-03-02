@@ -1,4 +1,4 @@
-FROM openjdk:13-jdk-alpine
+FROM maven:3.6.3-jdk-13
 
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
