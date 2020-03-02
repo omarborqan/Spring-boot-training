@@ -1,4 +1,5 @@
-FROM maven:3
+FROM openjdk:13-jdk
+
 RUN mkdir /tmp/build
 
 WORKDIR /tmp/build
