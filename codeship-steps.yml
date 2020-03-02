@@ -1,0 +1,6 @@
+- name: ci
+  service: hotel-app
+  command: mvn test -B
+- name: ci
+  service: hotel-app
+  command: maven build
