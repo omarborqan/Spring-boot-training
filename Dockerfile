@@ -1,7 +1,7 @@
 FROM openjdk:13-jdk-alpine
 
-COPY . /app
-WORKDIR /app
+COPY . /src
+WORKDIR /src
 RUN mvn install clean --fail-never -B -DfailIfNoTests=false
 
 
