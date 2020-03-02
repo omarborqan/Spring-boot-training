@@ -1,7 +1,7 @@
 hotel:
-  build: ./
+  build: 
     image: omarborqan/Spring-boot-training
-#    dockerfile: Dockerfile
+    dockerfile: Dockerfile
     
 #   mysql:
 #     image: mysql:5.7
