@@ -1,3 +1,3 @@
 - name: ci
-  service: hotel-app
+  service: hotel
   command: mvn test -B
