@@ -5,10 +5,8 @@ keycloak:
   
 hotel:
   build:
-    image: omarborqan/Spring-boot-training
+    image: omarborqan/spring-boot-training
     dockerfile: Dockerfile
   depends_on:
     - mysql
     - keycloak
-
-
