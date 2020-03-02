@@ -1,4 +1,3 @@
-
 networks:
   web:
 services:
@@ -10,24 +9,20 @@ services:
     networks:
       - web
 
-keycloak:
-  image: quay.io/keycloak/keycloak
-  ports:
-    - 8080:8080
-  environment:
-    KEYCLOAK_USER: oburqan
-    KEYCLOAK_PASSWORD: 1234
+  keycloak:
+    image: quay.io/keycloak/keycloak
+    ports:
+      - 8080:8080
+    environment:
+      KEYCLOAK_USER: oburqan
+      KEYCLOAK_PASSWORD: 1234
 
-hotel-app:
-  build: ./
-  image: hotel
-  expose:
-    - 8081
-  ports:
-    - 8081:8081
-  depends_on:
-    - mysql
-    - keycloak
-  networks:
-    - web
-
+  hotel:
+    build:
+      image: omarborqan/Spring-boot-training
+      dockerfile: ./Dockerfile
+    depends_on:
+      - mysql
+      - keycloak
+    networks:
+      - web
