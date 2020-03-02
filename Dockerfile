@@ -1,11 +1,9 @@
 FROM openjdk:13-jdk-alpine
 
-RUN mkdir /tmp/build
+COPY . /app
+WORKDIR /app
+RUN mvn install clean --fail-never -B -DfailIfNoTests=false
 
-WORKDIR /tmp/build
-#RUN mvn install clean --fail-never -B -DfailIfNoTests=false
-COPY . ./
-CMD ["printenv"]
 
 #FROM ubuntu:zesty
 #
