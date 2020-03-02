@@ -20,7 +20,7 @@ services:
 
   hotel-app:
     build: ./
-    image: hotel
+    #image: hotel
     expose:
       - 8081
     ports:
