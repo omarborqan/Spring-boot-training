@@ -1,7 +1,5 @@
 FROM maven:3.6.3-jdk-13
 
-RUN apt-get update && apt-get install -y build-essential
-
 WORKDIR /src
 
 # Copy the pom.xml into the image to install all dependencies
@@ -14,3 +12,5 @@ RUN mvn install clean --fail-never -B -DfailIfNoTests=false
 
 # Copy the whole repository into the image
 COPY . ./
+
+
