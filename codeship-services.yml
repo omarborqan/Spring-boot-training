@@ -1,11 +1,4 @@
-#mysql:
-#  image: mysql:5.7
-#keycloak:
-#  image: quay.io/keycloak/keycloak
 hotel:
   build:
     image: omarborqan/spring-boot-training
     dockerfile: Dockerfile
-  depends_on:
-    - mysql
-    - keycloak
