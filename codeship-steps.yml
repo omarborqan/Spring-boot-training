@@ -1,1 +1,6 @@
-
+- name: ci
+  service: project_name
+  command: mvn test -B
+- name: ci
+  service: project_name
+  command: gradle build
