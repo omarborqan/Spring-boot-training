@@ -1,5 +1,4 @@
-services:
-  hotel:
-    build:
-      image: omarborqan/Spring-boot-training
-      dockerfile: Dockerfile
+hotel:
+  build:
+    image: omarborqan/Spring-boot-training
+    dockerfile: Dockerfile
