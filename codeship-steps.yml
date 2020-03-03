@@ -1,6 +1,6 @@
 - name: build
   tag: master
-  service: build
+  service: hotel
   command: echo build
 - name: deploy
   tag: master
