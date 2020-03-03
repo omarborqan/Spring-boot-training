@@ -5,8 +5,8 @@ hotel:
     volumes:
       - ./tmp:/build
 
-deploy:
-  image: my-dind
-  dockerfile: Dockerfile.deploy
-  volumes_from:
-    - hotel
+#deploy:
+#  image: my-dind
+#  dockerfile: Dockerfile.deploy
+#  volumes_from:
+#    - hotel

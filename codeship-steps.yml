@@ -1,8 +1,4 @@
 - name: build
   tag: master
   service: hotel
-  command: echo build
-- name: deploy
-  tag: master
-  service: deploy
-  command: echo deploy
+  command: ls /tmp
