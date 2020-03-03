@@ -6,4 +6,4 @@ COPY . ./
 RUN mkdir -p /build
 WORKDIR /build
 RUN ls /build
-RUN mvn clean install --fail-never -B -DfailIfNoTests=false && cp -r target /build
+RUN mvn clean install --fail-never -B -DfailIfNoTests=false && cp target /build
