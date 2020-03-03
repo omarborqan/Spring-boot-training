@@ -1,6 +1,8 @@
-- name: AB
-  service: hotel
-  command: echo omar
-- name: CD
+- name: build
+  tag: master
+  service: build
+  command: echo build
+- name: deploy
+  tag: master
   service: deploy
-  command: echo hello world test
+  command: echo deploy

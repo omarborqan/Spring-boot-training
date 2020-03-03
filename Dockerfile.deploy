@@ -1,3 +1,7 @@
 FROM docker:dind
+WORKDIR /
+RUN ls /tmp
+RUN ls /build
 
-ADD ./build/target/spring-boot-mysql-0.0.1-SNAPSHOT.jar dind.jar
+
+#ADD ./build/target/spring-boot-mysql-0.0.1-SNAPSHOT.jar dind.jar

@@ -3,10 +3,7 @@ FROM maven:3.6.3-amazoncorretto-11
 WORKDIR /
 
 COPY . ./
-
-RUN mvn clean install --fail-never -B -DfailIfNoTests=false && ls
-
 RUN mkdir -p /build
-
-
-ADD ./target /build
+WORKDIR /build
+RUN ls /build
+RUN mvn clean install --fail-never -B -DfailIfNoTests=false && cp -r target /build
