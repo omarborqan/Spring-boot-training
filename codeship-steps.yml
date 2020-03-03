@@ -2,5 +2,5 @@
   service: hotel
   command: echo omar
 - name: CD
-  service: hotel
+  service: deploy
   command: echo hello world test
