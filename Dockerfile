@@ -6,7 +6,6 @@ COPY . ./
 
 RUN mvn clean install --fail-never -B -DfailIfNoTests=false && ls
 
-COPY ./target /data
 
 
 
