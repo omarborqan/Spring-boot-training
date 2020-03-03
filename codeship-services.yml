@@ -4,6 +4,7 @@ build:
     volumes:
       - ./tmp:/tmp
 deploy:
+  image: busybox
   dockerfile: Dockerfile.deploy
   volumes_from:
     - build
