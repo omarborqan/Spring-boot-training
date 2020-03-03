@@ -3,7 +3,7 @@ hotel:
     image: omarborqan/spring-boot-training
     dockerfile: Dockerfile.build
     volumes:
-      - ./data:/target
+      - ./tmp:/build
 
 deploy:
   image: dind
