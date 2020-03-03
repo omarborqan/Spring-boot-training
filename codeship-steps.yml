@@ -1,3 +1,6 @@
-- name: ci
+- name: AB
   service: hotel
   command: echo omar
+- name: CD
+  service: hotel
+  command: echo hello world test
