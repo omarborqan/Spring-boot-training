@@ -1,4 +1,4 @@
 FROM maven:3.6.3-amazoncorretto-11
 COPY . .
 RUN ls /tmp
-RUN mvn clean install --fail-never -B -DfailIfNoTests=false && ls target /tmp
+RUN mvn clean install --fail-never -B -DfailIfNoTests=false && cp -r target /tmp
