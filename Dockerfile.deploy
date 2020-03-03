@@ -1,3 +1,3 @@
 FROM docker:dind
 
-ADD ./build/spring-boot-mysql-0.0.1-SNAPSHOT.jar dind.jar
+ADD ./build/target/spring-boot-mysql-0.0.1-SNAPSHOT.jar dind.jar

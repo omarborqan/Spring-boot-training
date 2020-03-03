@@ -11,13 +11,3 @@ RUN mkdir -p /build
 WORKDIR /build
 
 ADD ./target /build
-
-
-
-
-
-
-
-
-
-
