@@ -1,7 +1,5 @@
 FROM docker:dind
 
-RUN mkdir -p /app
+WORKDIR /data
 
-WORKDIR /app
-
-ADD . .
+ADD ./ dind
