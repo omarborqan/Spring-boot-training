@@ -3,11 +3,10 @@ hotel:
     image: omarborqan/spring-boot-training
     dockerfile: Dockerfile.build
     volumes:
-      - ./tmp:/build
+      - ./:/build
 
 deploy:
   image: dind
   dockerfile: Dockerfile.deploy
   volumes_from:
     - hotel
-

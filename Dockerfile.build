@@ -10,7 +10,7 @@ RUN mkdir -p /build
 
 WORKDIR /build
 
-ADD ./tmp /build
+ADD ./target /build
 
 
 
