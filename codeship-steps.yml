@@ -5,4 +5,4 @@
 - name: deploy
   tag: master
   service: deploy
-  command: ls
+  command: ls /..
