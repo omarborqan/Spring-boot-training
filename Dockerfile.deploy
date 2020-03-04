@@ -2,8 +2,10 @@ FROM docker:dind
 
 WORKDIR /
 
-RUN touch data.txt
+RUN ls
+
+COPY . ./
 
 RUN ls
 
-ADD ./data.txt test-my-dind.txt
+RUN docker build ./ -t test-my-dind
