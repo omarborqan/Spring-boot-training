@@ -7,7 +7,7 @@
 
 deploy:
   build:
-    image: test-my-dind
+    image: hotel
     dockerfile: Dockerfile
     volumes_from:
     - hotel
