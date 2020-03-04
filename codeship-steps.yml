@@ -1,4 +1,4 @@
-- name: hotel
+- name: build
   tag: master
   service: hotel
   command: ls /tmp

@@ -9,7 +9,7 @@ deploy:
   image: my-dind
   dockerfile: Dockerfile.deploy
   volumes_from:
-    - build
+    - hotel
 
 #deploy:
 #  image: my-dind
