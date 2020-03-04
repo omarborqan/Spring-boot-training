@@ -1,6 +1,6 @@
 - name: build
   tag: master
-  service: build
+  service: hotel
   command: ls /tmp
 - name: deploy
   tag: master

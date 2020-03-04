@@ -1,10 +1,12 @@
-build:
+hotel:
+  build:
     image: omarborqan/spring-boot-training
     dockerfile: Dockerfile.build
     volumes:
       - ./tmp:/tmp
+
 deploy:
-  image: busybox
+  image: my-dind
   dockerfile: Dockerfile.deploy
   volumes_from:
     - build
