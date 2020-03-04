@@ -1,11 +1,9 @@
 FROM docker:dind
 
-RUN docker -v
+WORKDIR /
 
 RUN touch data.txt
 
 RUN ls
 
 ADD ./data.txt test-my-dind.txt
-
-
