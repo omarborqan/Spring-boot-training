@@ -5,3 +5,4 @@ RUN docker -v
 RUN ls tmp
 
 #ADD ./tmp/target/spring-boot-mysql-0.0.1-SNAPSHOT.jar test-my-dind.jar
+RUN touch data.txt
