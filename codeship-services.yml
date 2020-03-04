@@ -6,9 +6,10 @@ hotel:
       - ./tmp:/tmp
 
 deploy:
-  image: my-dind
-  dockerfile: Dockerfile.deploy
-  volumes_from:
+  build:
+    image: my-dind
+    dockerfile: Dockerfile.deploy
+    volumes_from:
     - hotel
 
 #deploy:
