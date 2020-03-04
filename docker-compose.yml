@@ -1,0 +1,35 @@
+version: "3"
+networks:
+  web:
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: hotel
+    volumes:
+      - C:/data/mysql:/var/lib/mysql
+    networks:
+      - web
+
+  keycloak:
+    image: quay.io/keycloak/keycloak
+    ports:
+      - 8080:8080
+    environment:
+      KEYCLOAK_USER: oburqan
+      KEYCLOAK_PASSWORD: 1234
+
+  hotel-app:
+    build: ./
+    image: hotel
+    expose:
+      - 8081
+    ports:
+      - 8081:8081
+    depends_on:
+      - mysql
+      - keycloak
+    networks:
+      - web
+
