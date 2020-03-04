@@ -1,6 +1,5 @@
 FROM docker:dind
 
-#WORKDIR /
 
 RUN docker -v
 
