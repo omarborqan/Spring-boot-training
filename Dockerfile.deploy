@@ -6,4 +6,4 @@ RUN touch data.txt
 
 RUN ls
 
-ADD ./data.txt test-my-dind.txt
+#ADD ./data.txt test-my-dind.txt
